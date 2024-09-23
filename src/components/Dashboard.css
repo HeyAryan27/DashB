@@ -1,0 +1,38 @@
+/* .responsive-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  } */
+  
+  /* For smaller screens, arrange elements in a column */
+  @media (max-width: 768px) {
+    .responsive-grid-1 {
+      /* grid-template-columns: 1fr; */
+      display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 800px;
+    gap: 2rem;
+    }
+    .responsive-grid-2 {
+      /* grid-template-columns: 1fr; */
+      display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 600px;   */
+    gap: 2rem;
+    }
+  }
+  
+  /* For even smaller screens, adjust the width */
+  @media (max-width: 290px) {
+    .responsive-grid-1 {
+      grid-template-columns: fr;
+      gap: 1rem;
+    }
+    .responsive-grid-2 {
+      /* grid-template-columns: 1fr; */
+      display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 600px; */
+    gap: 2rem;
+    }
+  }
